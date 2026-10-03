@@ -1,17 +1,16 @@
 # Phishing Detection & Email Security Lab
 
-A hands-on cybersecurity lab focused on investigating simulated
-phishing emails using email analysis, header analysis, IOC extraction,
-threat intelligence and phishing detection techniques.
+A hands-on cybersecurity lab focused on investigating simulated phishing emails using email analysis, header analysis, IOC extraction, threat intelligence, phishing detection techniques, and incident response procedures.
 
 ## Objective
 
-The objective of this project is to simulate a SOC-style phishing
-investigation and develop a structured workflow for identifying,
-analysing and responding to suspicious emails.
+The objective of this project is to simulate a SOC-style phishing investigation and develop a structured workflow for identifying, analysing, and responding to suspicious emails.
+
+The investigation covers the process from initial email analysis through IOC extraction, threat intelligence investigation, detection criteria development, risk assessment, and incident response.
 
 ## Investigation Workflow
 
+```text
 Suspicious Email
        ↓
 Email Content Analysis
@@ -29,7 +28,7 @@ Risk Assessment
 Incident Response
        ↓
 Mitigation
-
+```
 
 ## Skills Demonstrated
 
@@ -37,8 +36,8 @@ Mitigation
 - Email header analysis
 - IOC identification and extraction
 - Threat intelligence investigation
-- Social-engineering analysis
-- SPF, DKIM and DMARC analysis
+- Social engineering analysis
+- SPF, DKIM, and DMARC analysis
 - URL and domain investigation
 - Detection criteria development
 - Incident response documentation
@@ -49,7 +48,7 @@ Mitigation
 - Email header analysis
 - Threat intelligence resources
 - IOC analysis
-- DNS/domain investigation concepts
+- DNS and domain investigation concepts
 - SPF
 - DKIM
 - DMARC
@@ -83,10 +82,12 @@ The simulated email headers were analysed to identify:
 The simulated authentication results were:
 
 | Authentication | Result |
-|----------------|--------|
-| SPF            | FAIL   |
-| DKIM           | FAIL   |
-| DMARC          | FAIL   |
+|---|---|
+| SPF | FAIL |
+| DKIM | FAIL |
+| DMARC | FAIL |
+
+These results were treated as supporting indicators during the phishing investigation.
 
 ### 3. IOC Extraction
 
@@ -94,11 +95,11 @@ The investigation identified several indicators:
 
 - Suspicious sender addresses
 - Lookalike domains
-- Suspicious URL
+- Suspicious URLs
 - Simulated IP addresses
 - Email authentication failures
 
-All indicators are documented in the `iocs/` directory.
+All extracted indicators are documented in the `iocs/` directory.
 
 ### 4. Threat Intelligence Workflow
 
@@ -109,13 +110,13 @@ A structured workflow was developed for investigating:
 - URLs
 - IP addresses
 
-Potential intelligence sources include reputation services, domain/DNS information and internal security telemetry.
+Potential intelligence sources include reputation services, domain and DNS information, and internal security telemetry.
 
-The indicators used in this project are simulated and use reserved documentation domains/IP addresses.
+The indicators used in this project are simulated and use reserved documentation domains and IP addresses.
 
 ### 5. Detection Criteria
 
-Detection criteria were developed around:
+Detection criteria were developed around multiple phishing indicators, including:
 
 - Suspicious sender domains
 - Lookalike domains
@@ -124,7 +125,7 @@ Detection criteria were developed around:
 - Brand impersonation
 - SPF/DKIM/DMARC failures
 
-Multiple indicators should be considered together when determining phishing risk.
+Multiple indicators should be considered together when determining phishing risk rather than relying on a single indicator.
 
 ### 6. Incident Response
 
@@ -132,15 +133,16 @@ The investigation follows a structured response process:
 
 1. Preserve the original email and headers.
 2. Extract relevant IOCs.
-3. Investigate domains, URLs and IP addresses.
+3. Investigate domains, URLs, and IP addresses.
 4. Search internal security logs for related activity.
 5. Determine whether the recipient interacted with the message.
 6. Block confirmed malicious indicators where appropriate.
 7. Remove similar messages if necessary.
-8. Document findings and remediation.
+8. Document findings and remediation actions.
 
 ## Repository Structure
 
+```text
 phishing-detection-email-security-lab/
 │
 ├── analysis/
@@ -162,9 +164,21 @@ phishing-detection-email-security-lab/
 │   └── phishing-email-01-headers.txt
 │
 └── screenshots/
+```
 
 ## Key Takeaways
 
-This project demonstrates a structured approach to phishing investigation, from initial email analysis through IOC extraction, technical header analysis, detection criteria and incident response.
+This project demonstrates a structured approach to phishing investigation, covering:
 
-> **Note:** All email addresses, domains, URLs and IP addresses in this project are simulated for educational purposes. No real phishing infrastructure or malicious services were used.
+- Initial email analysis
+- Email header analysis
+- IOC extraction
+- Threat intelligence investigation
+- Phishing detection criteria
+- Risk assessment
+- Incident response
+- Security documentation
+
+The lab demonstrates how multiple technical and behavioural indicators can be combined to investigate and assess suspicious email activity in a SOC environment.
+
+> **Note:** All email addresses, domains, URLs, and IP addresses in this project are simulated for educational purposes. No real phishing infrastructure or malicious services were used.
