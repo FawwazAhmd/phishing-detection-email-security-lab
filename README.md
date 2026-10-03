@@ -179,6 +179,24 @@ This project demonstrates a structured approach to phishing investigation, cover
 - Incident response
 - Security documentation
 
+## Investigation Evidence
+
+### Phishing Email Analysis
+
+![Phishing Email Sample](screenshots/01-phishing-email-sample.png)
+
+### Email Header Analysis
+
+![Email Header Analysis](screenshots/02-email-header-analysis.png)
+
+### IOC Extraction
+
+![IOC Extraction](screenshots/03-ioc-extraction.png)
+
+### Detection & Response
+
+![Detection and Response](screenshots/04-detection-and-response.png)
+
 The lab demonstrates how multiple technical and behavioural indicators can be combined to investigate and assess suspicious email activity in a SOC environment.
 
 > **Note:** All email addresses, domains, URLs, and IP addresses in this project are simulated for educational purposes. No real phishing infrastructure or malicious services were used.
