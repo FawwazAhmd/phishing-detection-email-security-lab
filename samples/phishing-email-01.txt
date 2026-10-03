@@ -1,1 +1,20 @@
+From: Microsoft 365 Security <security@micr0soft-security.example>
+To: analyst@example.com
+Subject: Urgent: Your Microsoft 365 account will be suspended
+Date: Mon, 05 Oct 2026 09:14:22 +0000
 
+Hello,
+
+We detected unusual activity on your Microsoft 365 account.
+
+Your account will be suspended within 24 hours unless you verify your
+identity immediately.
+
+Please verify your account using the link below:
+
+https://login-microsoft-security.example/verify
+
+Failure to complete verification may result in permanent account
+restriction.
+
+Microsoft 365 Security Team
